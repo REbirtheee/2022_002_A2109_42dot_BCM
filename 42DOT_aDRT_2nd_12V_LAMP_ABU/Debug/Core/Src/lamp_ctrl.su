@@ -1,0 +1,12 @@
+lamp_ctrl.c:14:6:LampSWRead	16	static
+lamp_ctrl.c:77:6:InputSWChatt	16	static
+lamp_ctrl.c:215:6:LampControl	16	static
+lamp_ctrl.c:481:6:RF_DoorControl	4	static
+lamp_ctrl.c:505:6:DoorControl	8	static
+lamp_ctrl.c:688:6:DistantDoorControl	4	static
+lamp_ctrl.c:713:6:usdoor_control	4	static
+lamp_ctrl.c:739:6:ButtonControl	16	static
+lamp_ctrl.c:768:6:LampDataConv	16	static
+lamp_ctrl.c:783:6:CMS_Control	8	static
+lamp_ctrl.c:795:6:boardingpass_AVAS_control	8	static
+lamp_ctrl.c:823:6:doorwaring_AVAS_control	8	static

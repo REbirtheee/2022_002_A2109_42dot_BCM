@@ -1,0 +1,5 @@
+lamp_ctrl.c:47:6:LampSWRead	16	static
+lamp_ctrl.c:63:6:InputSWChatt	16	static
+lamp_ctrl.c:91:6:LampControl	16	static
+lamp_ctrl.c:402:6:WelcomeControl	8	static
+lamp_ctrl.c:520:6:LampDataConv	16	static

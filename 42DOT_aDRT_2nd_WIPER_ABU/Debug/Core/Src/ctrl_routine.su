@@ -1,0 +1,5 @@
+ctrl_routine.c:12:6:HAL_TIM_PeriodElapsedCallback	16	static
+ctrl_routine.c:63:6:HAL_FDCAN_RxFifo0Callback	16	static
+ctrl_routine.c:76:6:LocalToABU	16	static
+ctrl_routine.c:116:6:CanTxMessage	24	static
+ctrl_routine.c:131:6:CANReStart	8	static

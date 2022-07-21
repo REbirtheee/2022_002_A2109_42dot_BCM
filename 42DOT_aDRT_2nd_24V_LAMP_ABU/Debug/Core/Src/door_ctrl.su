@@ -1,0 +1,7 @@
+door_ctrl.c:15:6:DoorWarningControl	4	static
+door_ctrl.c:60:6:PBrakeWarningControl	4	static
+door_ctrl.c:102:6:SeatBeltRead	8	static
+door_ctrl.c:162:6:SeatbeltWarningControl	4	static
+door_ctrl.c:254:6:ImpactControl	4	static
+door_ctrl.c:267:6:SeatbeltDataConv	16	static
+door_ctrl.c:284:6:WarningAlarmControl	8	static

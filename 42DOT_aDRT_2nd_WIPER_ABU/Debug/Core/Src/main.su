@@ -1,0 +1,13 @@
+core_cm4.h:1933:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
+main.c:89:5:main	8	static
+main.c:143:6:SystemClock_Config	168	static
+main.c:199:13:MX_FDCAN2_Init	16	static
+main.c:262:13:MX_RTC_Init	8	static
+main.c:304:13:MX_SPI2_Init	8	static
+main.c:344:13:MX_TIM3_Init	48	static
+main.c:397:13:MX_TIM5_Init	48	static
+main.c:446:13:MX_TIM6_Init	24	static
+main.c:484:13:MX_GPIO_Init	48	static
+main.c:560:6:AnalogDataReceive	24	static
+main.c:591:6:StopModeStart	16	static
+main.c:619:6:Error_Handler	8	static,ignoring_inline_asm

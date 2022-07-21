@@ -1,0 +1,9 @@
+epb_function.c:16:6:EpbCanInfo0x47F	8	static
+epb_function.c:39:6:EpbCanInfo0x470	8	static
+epb_function.c:81:6:EpbCanInfo0x386	8	static
+epb_function.c:104:6:EpbCanInfo0x5B0	8	static
+epb_function.c:123:6:EpbCanInfo0x541	24	static
+epb_function.c:161:6:EpbCanInfo0x507	8	static
+epb_function.c:177:6:EpbCanInfo0x153	8	static
+epb_function.c:199:6:EpbCanInfo0x329	8	static
+epb_function.c:232:6:EpbCanInfo0x260	8	static

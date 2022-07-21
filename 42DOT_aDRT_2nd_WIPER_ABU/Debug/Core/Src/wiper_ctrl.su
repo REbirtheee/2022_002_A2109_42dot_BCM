@@ -1,0 +1,7 @@
+wiper_ctrl.c:11:6:WiperSWRead	16	static
+wiper_ctrl.c:79:6:WiperSWChatt	16	static
+wiper_ctrl.c:146:6:WiperControl	16	static
+wiper_ctrl.c:258:6:DimmerLampControl	8	static
+wiper_ctrl.c:336:6:AutoWiperControl	16	static
+wiper_ctrl.c:430:6:LampControl	16	static
+wiper_ctrl.c:458:6:WiperDataConv	16	static
