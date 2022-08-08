@@ -2012,9 +2012,9 @@ void LocalToILC(CAN_RxHeaderTypeDef *rxheader, uint8_t *rxdata) {
  8001030:	d004      	beq.n	800103c <LocalToILC+0x40>
  8001032:	f5b3 7f88 	cmp.w	r3, #272	; 0x110
  8001036:	f000 80b1 	beq.w	800119c <LocalToILC+0x1a0>
+		soc_value = rxdata[1];
 		charge_mode = rxdata[2];
 		car_ready_status = rxdata[3];
-#endif
 		break;
 	}
 }

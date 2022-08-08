@@ -198,11 +198,9 @@ void LocalToILC(CAN_RxHeaderTypeDef *rxheader, uint8_t *rxdata) {
 		} else {
 			regenerative_brake_mode = 1;
 		}
-#ifndef DEBUG_TEST
 		soc_value = rxdata[1];
 		charge_mode = rxdata[2];
 		car_ready_status = rxdata[3];
-#endif
 		break;
 	}
 }
@@ -218,6 +216,7 @@ void LLCToILC(CAN_RxHeaderTypeDef *rxheader, uint8_t *rxdata) {
 		brake_stauts = rxdata[6]&0x01;
 		shift_status = (rxdata[6]&0x06) >> 1;
 		epb_status = (rxdata[6]&0x38) >> 3;
+
 #ifdef DEBUG_TEST		// for simulator test
 		soc_value = rxdata[0];
 		charge_mode = rxdata[7]&0x03;

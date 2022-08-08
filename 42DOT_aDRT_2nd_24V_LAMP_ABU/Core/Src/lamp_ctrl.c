@@ -248,7 +248,17 @@ void LampControl(struct LampStatus_s *lamp_status, struct InputStatus_s *input_s
 			}
 //			if( ign1_status_prev == 0 )  {
 			if( (brake_status==1) || (input_status->brake_push_sw==1) ) {
-				//htim3.Instance->CCR2 = htim4.Instance->CCR3 = 700; // 100% -> 70% -> 70% 220713 song oper
+#if 0
+				htim3.Instance->CCR2 = htim4.Instance->CCR3 = 210; // 100% -> 70% -> 70% 220713 song oper
+
+#endif
+#if 1 //220725 -> brake -> side DRL bright control
+				if( (taillamp_on==1) && (drl_center_on==1) ) {
+					htim3.Instance->CCR2 = htim4.Instance->CCR3 = 210; // 100% -> 70% -> 70% 220713 song oper
+				}else{
+					htim3.Instance->CCR2 = htim4.Instance->CCR3 = 490;
+				}
+#endif
 				htim4.Instance->CCR4 = htim3.Instance->CCR1 = 700; //220714
 			}else{
 				htim4.Instance->CCR4 = htim3.Instance->CCR1 = 0; //220714
@@ -263,7 +273,8 @@ void LampControl(struct LampStatus_s *lamp_status, struct InputStatus_s *input_s
 			if( (taillamp_on==1) && (drl_center_on==1) ) {
 //			if( taillamp_on_prev == 0 ) {
 				if( (brake_status==0) && (input_status->brake_push_sw==0) ) {
-					htim3.Instance->CCR2 = htim4.Instance->CCR3 = htim4.Instance->CCR4 = htim3.Instance->CCR1 = 210; // 30% 100% -> 70% -> 21% 220713 song oper
+					//htim3.Instance->CCR2 = htim4.Instance->CCR3 = htim4.Instance->CCR4 = htim3.Instance->CCR1 = 210; // 30% 100% -> 70% -> 21% 220713 song oper
+					htim3.Instance->CCR2 = htim4.Instance->CCR3 = 210; //220725 tail -> back center off
 				} else if( brake_status == 1 ) {
 					htim3.Instance->CCR1 = htim4.Instance->CCR4 = htim3.Instance->CCR1 = 700; // 100% -> 70% -> 70% 220713 song oper
 				}

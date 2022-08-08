@@ -83,6 +83,8 @@ void VehicleToABU(FDCAN_RxHeaderTypeDef *rxheader, uint8_t *rxdata)
 {
 	switch(rxheader->Identifier) {
 	case 0x08F200A0:
+
+		/*
 		//car_ready_status = rxdata[0] & 0x01;
 		//220524 LHS
 		if(rxdata[0] == 0x01 && ((rxdata[1] == 0x20) || (rxdata[1] == 0x21))){
@@ -90,6 +92,17 @@ void VehicleToABU(FDCAN_RxHeaderTypeDef *rxheader, uint8_t *rxdata)
 		}else{
 			car_ready_status = 0;
 		}
+		*/
+
+	    if( (rxdata[0] == 0x00) && ( (rxdata[1] == 0x00) || (rxdata[1] == 0x01))) {
+	    	car_ready_status = 0;
+	    } else if(rxdata[0] == 0x00 && (rxdata[1] == 0x20 || rxdata[1] == 0x21)) {
+	    	car_ready_status = 0;
+	    } else if(rxdata[0] == 0x00 && (rxdata[1] == 0x30 || rxdata[1] == 0x31)) {
+	    	car_ready_status = 0;
+	    } else if(rxdata[0] == 0x01 && ((rxdata[1] == 0x20) || (rxdata[1] == 0x21))) {
+	    	car_ready_status = 1;
+	    }
 
 		break;
 
