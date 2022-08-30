@@ -132,11 +132,11 @@ void ButtonSWChatt()
 
 void ButtonConrtrol()
 {
-	static uint8_t cluster_trip_status_prev = 0;
+	//static uint8_t cluster_trip_status_prev = 0;
 	//static uint16_t cluster_trip_push_cnt = 0;
 
 
-	if( Input_Status.ign1_status == 1 ) {
+	if( Input_Status.ign1_status == 1 )  {
 		Button_Status.ign1_status = 1;
 	} else if( Input_Status.ign1_status == 0 ) {
 		Button_Status.ign1_status = 0;

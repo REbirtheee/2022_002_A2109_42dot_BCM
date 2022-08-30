@@ -354,7 +354,7 @@ void SM2ICDataConv(uint8_t *txdata, uint8_t *txflag)
 	txdata[0] = vehicle_vel_i;
 	txdata[1] = vehicle_vel_i>>8;
 
-	/*
+	// 220830 CHM
 	if(car_ready_status == 1){
 		txdata[0] = vehicle_vel_i;
 		txdata[1] = vehicle_vel_i>>8;
@@ -362,7 +362,7 @@ void SM2ICDataConv(uint8_t *txdata, uint8_t *txflag)
 		txdata[0] = 0;
 		txdata[1] = 0;
 	}
-	*/
+
 	*txflag = 1;
 }
 
